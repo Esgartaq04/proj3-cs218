@@ -132,7 +132,8 @@ export default function App() {
       });
       const data = await res.json();
       // allIncomingItems returns an array — unwrap it
-      const payload = Array.isArray(data) ? data[0] : data;
+      let payload = Array.isArray(data) ? data[0] : data;
+      if (payload && payload.json) payload = payload.json;
       setResults(payload);
       setPhase("results");
     } catch (e) {
