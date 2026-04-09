@@ -134,6 +134,8 @@ export default function App() {
       // allIncomingItems returns an array — unwrap it
       let payload = Array.isArray(data) ? data[0] : data;
       if (payload && payload.json) payload = payload.json;
+      console.log('WEBHOOK RESPONSE:', JSON.stringify(payload, null, 2));  // ← add this
+
       setResults(payload);
       setPhase("results");
     } catch (e) {

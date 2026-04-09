@@ -4,5 +4,5 @@ import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: '/proj3-cs218/pathfind-careers/'
+  base: '/proj3-cs218/'
 })
