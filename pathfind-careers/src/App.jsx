@@ -392,7 +392,7 @@ export default function App() {
 
             {/* Questions to Ask */}
             {r.questions_to_ask_employer && r.questions_to_ask_employer.length > 0 && (
-              <Section title="Questions to Ask the Employer" delay={0.4}>
+              <Section title="Questions Asked by the Employer" delay={0.4}>
                 <Card>
                   <ul style={{ ...bodyFont, paddingLeft: 20, margin: 0 }}>
                     {r.questions_to_ask_employer.map((q, i) => (
